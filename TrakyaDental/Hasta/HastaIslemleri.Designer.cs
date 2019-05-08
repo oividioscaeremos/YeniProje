@@ -55,8 +55,6 @@
             this.tbEvTel = new System.Windows.Forms.TextBox();
             this.tbGSM = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.tbDosyaNo = new System.Windows.Forms.TextBox();
-            this.tbHastaDoktor = new System.Windows.Forms.TextBox();
             this.tbHastaCinsiyet = new System.Windows.Forms.TextBox();
             this.tbHastaDogTar = new System.Windows.Forms.TextBox();
             this.tbHastaTCNO = new System.Windows.Forms.TextBox();
@@ -67,6 +65,7 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel4 = new System.Windows.Forms.Panel();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.label5 = new System.Windows.Forms.Label();
             this.hastaTedavileri1 = new TrakyaDental.Hasta.HastaTedavileri();
             this.hastaEkle1 = new TrakyaDental.Hasta.HastaEkle();
             this.panel1.SuspendLayout();
@@ -263,8 +262,9 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.Control;
-            this.panel3.Controls.Add(this.hastaTedavileri1);
             this.panel3.Controls.Add(this.hastaEkle1);
+            this.panel3.Controls.Add(this.hastaTedavileri1);
+            this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.btnBitir);
             this.panel3.Controls.Add(this.button2);
             this.panel3.Controls.Add(this.pictureBox4);
@@ -275,8 +275,6 @@
             this.panel3.Controls.Add(this.tbEvTel);
             this.panel3.Controls.Add(this.tbGSM);
             this.panel3.Controls.Add(this.pictureBox3);
-            this.panel3.Controls.Add(this.tbDosyaNo);
-            this.panel3.Controls.Add(this.tbHastaDoktor);
             this.panel3.Controls.Add(this.tbHastaCinsiyet);
             this.panel3.Controls.Add(this.tbHastaDogTar);
             this.panel3.Controls.Add(this.tbHastaTCNO);
@@ -395,22 +393,6 @@
             this.pictureBox3.TabIndex = 51;
             this.pictureBox3.TabStop = false;
             // 
-            // tbDosyaNo
-            // 
-            this.tbDosyaNo.Enabled = false;
-            this.tbDosyaNo.Location = new System.Drawing.Point(162, 166);
-            this.tbDosyaNo.Name = "tbDosyaNo";
-            this.tbDosyaNo.Size = new System.Drawing.Size(215, 20);
-            this.tbDosyaNo.TabIndex = 50;
-            // 
-            // tbHastaDoktor
-            // 
-            this.tbHastaDoktor.Enabled = false;
-            this.tbHastaDoktor.Location = new System.Drawing.Point(162, 140);
-            this.tbHastaDoktor.Name = "tbHastaDoktor";
-            this.tbHastaDoktor.Size = new System.Drawing.Size(215, 20);
-            this.tbHastaDoktor.TabIndex = 49;
-            // 
             // tbHastaCinsiyet
             // 
             this.tbHastaCinsiyet.Enabled = false;
@@ -484,6 +466,7 @@
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(889, 391);
             this.dataGridView1.TabIndex = 61;
+            this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
             // 
             // panel4
             // 
@@ -499,9 +482,17 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
+            // label5
+            // 
+            this.label5.ForeColor = System.Drawing.SystemColors.Control;
+            this.label5.Location = new System.Drawing.Point(32, 136);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(163, 50);
+            this.label5.TabIndex = 64;
+            // 
             // hastaTedavileri1
             // 
-            this.hastaTedavileri1.Location = new System.Drawing.Point(55, 104);
+            this.hastaTedavileri1.Location = new System.Drawing.Point(27, 34);
             this.hastaTedavileri1.Name = "hastaTedavileri1";
             this.hastaTedavileri1.Size = new System.Drawing.Size(800, 400);
             this.hastaTedavileri1.TabIndex = 63;
@@ -509,7 +500,7 @@
             // hastaEkle1
             // 
             this.hastaEkle1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.hastaEkle1.Location = new System.Drawing.Point(55, 104);
+            this.hastaEkle1.Location = new System.Drawing.Point(27, 33);
             this.hastaEkle1.Name = "hastaEkle1";
             this.hastaEkle1.Size = new System.Drawing.Size(800, 400);
             this.hastaEkle1.TabIndex = 12;
@@ -584,8 +575,6 @@
         private System.Windows.Forms.TextBox tbEvTel;
         private System.Windows.Forms.TextBox tbGSM;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.TextBox tbDosyaNo;
-        private System.Windows.Forms.TextBox tbHastaDoktor;
         private System.Windows.Forms.TextBox tbHastaCinsiyet;
         private System.Windows.Forms.TextBox tbHastaDogTar;
         private System.Windows.Forms.TextBox tbHastaTCNO;
@@ -594,6 +583,7 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.DataGridView dataGridView1;
         private Hasta.HastaTedavileri hastaTedavileri1;
+        private System.Windows.Forms.Label label5;
     }
 }
 

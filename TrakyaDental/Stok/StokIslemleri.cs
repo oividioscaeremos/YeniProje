@@ -60,7 +60,7 @@ namespace TrakyaDental
             //DataTable stokBilgileri = new DataTable();
             string[] sonuc = new string[20];
             int counter = 0;
-            string connStr = "Data Source=.;Initial Catalog=TrakyaDental;User ID=sa; Password=rootroot;";
+            string connStr = "Data Source=.;Initial Catalog=TrakyaDental;Integrated Security=True";
 
             using (SqlConnection con = new SqlConnection(connStr))
             {
@@ -95,7 +95,7 @@ namespace TrakyaDental
                 urunDetay1.skt = Convert.ToDateTime(dataGridView1.SelectedCells[7].Value);
                 urunDetay1.barkod = dataGridView1.SelectedCells[8].Value.ToString();
 
-                string connStr = "Data Source=.;Initial Catalog=TrakyaDental;User ID=sa; Password=rootroot;";
+                string connStr = "Data Source=.;Initial Catalog=TrakyaDental;Integrated Security=True";
                 urunDetay1.aciklama = veritabaniDetayCek(connStr, "Grup_Aciklama", "UrunGrup", "GrupID", grup.ToString())[0];
                 urunDetay1.Update();
                 urunDetay1.Show();
@@ -119,7 +119,7 @@ namespace TrakyaDental
         {
             DataTable stokBilgileri = new DataTable();
 
-            string connStr = "Data Source=.;Initial Catalog=TrakyaDental;User ID=sa; Password=rootroot;";
+            string connStr = "Data Source=.;Initial Catalog=TrakyaDental;Integrated Security=True";
 
             using (SqlConnection con = new SqlConnection(connStr))
             {
@@ -161,7 +161,7 @@ namespace TrakyaDental
 
                 ComboBox urunG = new ComboBox();
                 ComboBox markalar = new ComboBox();
-                string connStr = "Data Source=.;Initial Catalog=TrakyaDental;User ID=sa; Password=rootroot;";
+                string connStr = "Data Source=.;Initial Catalog=TrakyaDental;Integrated Security=True";
 
                 using (SqlConnection con = new SqlConnection(connStr))
                 {

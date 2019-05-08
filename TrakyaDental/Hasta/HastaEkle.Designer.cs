@@ -64,6 +64,7 @@
             this.addIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.addIcon.TabIndex = 33;
             this.addIcon.TabStop = false;
+            this.addIcon.Click += new System.EventHandler(this.addIcon_Click);
             // 
             // textBox1
             // 
@@ -261,6 +262,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "HastaEkle";
             this.Size = new System.Drawing.Size(800, 400);
+            this.Load += new System.EventHandler(this.HastaEkle_Load);
             ((System.ComponentModel.ISupportInitialize)(this.addIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

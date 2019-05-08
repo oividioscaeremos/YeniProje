@@ -84,6 +84,7 @@ namespace TrakyaDental
             personelBilgileri1.Show();
             randevuDefteri1.Hide();
             smSveEmailIslemleri1.Hide();
+            personelEkle1.Hide();
             labelPlus.Show();
             pbPlus.Show();
 
@@ -95,6 +96,16 @@ namespace TrakyaDental
             var anasayfa = new Form1();
             anasayfa.ShowDialog();
             this.Dispose();
+        }
+
+        private void labelPlus_Click(object sender, EventArgs e)
+        {
+            personelEkle1.Show();
+        }
+
+        private void pbPlus_Click(object sender, EventArgs e)
+        {
+            personelEkle1.Show();
         }
 
         private void panel1_MouseDown(object sender, MouseEventArgs e)

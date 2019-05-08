@@ -28,13 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(KlinikIslemleri));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnMinimize = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.lblHeader = new System.Windows.Forms.Label();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
             this.blue = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
@@ -44,21 +42,22 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pbPersonelBilgileri = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.personelEkle1 = new TrakyaDental.Klinik.PersonelEkle();
+            this.labelPlus = new System.Windows.Forms.Label();
+            this.pbPlus = new System.Windows.Forms.PictureBox();
             this.pbBackToMainScreen = new System.Windows.Forms.PictureBox();
             this.personelBilgileri1 = new TrakyaDental.PersonelBilgileri();
             this.smSveEmailIslemleri1 = new TrakyaDental.SMSveEmailIslemleri();
             this.randevuDefteri1 = new TrakyaDental.RandevuDefteri();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.labelPlus = new System.Windows.Forms.Label();
-            this.pbPlus = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbSMSveEmail)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbRandevuDefteri)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPersonelBilgileri)).BeginInit();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbBackToMainScreen)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPlus)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbBackToMainScreen)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -110,12 +109,6 @@
             this.lblHeader.Size = new System.Drawing.Size(373, 24);
             this.lblHeader.TabIndex = 1;
             this.lblHeader.Text = "TRAKYA DENTAL - Dental Klinik Çözümleri";
-            // 
-            // imageList1
-            // 
-            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
             // panel2
             // 
@@ -226,6 +219,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.Control;
+            this.panel3.Controls.Add(this.personelEkle1);
             this.panel3.Controls.Add(this.labelPlus);
             this.panel3.Controls.Add(this.pbPlus);
             this.panel3.Controls.Add(this.pbBackToMainScreen);
@@ -237,6 +231,35 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(889, 599);
             this.panel3.TabIndex = 2;
+            // 
+            // personelEkle1
+            // 
+            this.personelEkle1.Location = new System.Drawing.Point(140, 122);
+            this.personelEkle1.Name = "personelEkle1";
+            this.personelEkle1.Size = new System.Drawing.Size(646, 348);
+            this.personelEkle1.TabIndex = 20;
+            // 
+            // labelPlus
+            // 
+            this.labelPlus.AutoSize = true;
+            this.labelPlus.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelPlus.Location = new System.Drawing.Point(740, 18);
+            this.labelPlus.Name = "labelPlus";
+            this.labelPlus.Size = new System.Drawing.Size(146, 24);
+            this.labelPlus.TabIndex = 19;
+            this.labelPlus.Text = "YENİ OLUŞTUR";
+            this.labelPlus.Click += new System.EventHandler(this.labelPlus_Click);
+            // 
+            // pbPlus
+            // 
+            this.pbPlus.Image = global::TrakyaDental.Properties.Resources.plusNew;
+            this.pbPlus.Location = new System.Drawing.Point(711, 15);
+            this.pbPlus.Name = "pbPlus";
+            this.pbPlus.Size = new System.Drawing.Size(26, 31);
+            this.pbPlus.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbPlus.TabIndex = 18;
+            this.pbPlus.TabStop = false;
+            this.pbPlus.Click += new System.EventHandler(this.pbPlus_Click);
             // 
             // pbBackToMainScreen
             // 
@@ -279,26 +302,6 @@
             this.panel4.Size = new System.Drawing.Size(10, 599);
             this.panel4.TabIndex = 3;
             // 
-            // labelPlus
-            // 
-            this.labelPlus.AutoSize = true;
-            this.labelPlus.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelPlus.Location = new System.Drawing.Point(740, 18);
-            this.labelPlus.Name = "labelPlus";
-            this.labelPlus.Size = new System.Drawing.Size(146, 24);
-            this.labelPlus.TabIndex = 19;
-            this.labelPlus.Text = "YENİ OLUŞTUR";
-            // 
-            // pbPlus
-            // 
-            this.pbPlus.Image = global::TrakyaDental.Properties.Resources.plusNew;
-            this.pbPlus.Location = new System.Drawing.Point(711, 15);
-            this.pbPlus.Name = "pbPlus";
-            this.pbPlus.Size = new System.Drawing.Size(26, 31);
-            this.pbPlus.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbPlus.TabIndex = 18;
-            this.pbPlus.TabStop = false;
-            // 
             // KlinikIslemleri
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -325,8 +328,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbPersonelBilgileri)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbBackToMainScreen)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPlus)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbBackToMainScreen)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -335,7 +338,6 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblHeader;
-        private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button btnClose;
@@ -354,6 +356,7 @@
         private System.Windows.Forms.PictureBox pbBackToMainScreen;
         private System.Windows.Forms.Label labelPlus;
         private System.Windows.Forms.PictureBox pbPlus;
+        private Klinik.PersonelEkle personelEkle1;
     }
 }
 
