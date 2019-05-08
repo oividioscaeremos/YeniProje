@@ -118,6 +118,11 @@ namespace TrakyaDental.Stok
             lastLocation = e.Location;
         }
 
+        private void dateSKT_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
         private void UrunEkle_Load(object sender, EventArgs e)
         {
                   

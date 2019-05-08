@@ -78,6 +78,12 @@
     <Compile Include="Hasta\HastaTedavileri.Designer.cs">
       <DependentUpon>HastaTedavileri.cs</DependentUpon>
     </Compile>
+    <Compile Include="Mali\LaboratuvarOdemeleriYeni.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Mali\LaboratuvarOdemeleriYeni.Designer.cs">
+      <DependentUpon>LaboratuvarOdemeleriYeni.cs</DependentUpon>
+    </Compile>
     <Compile Include="Mali\GenelPersonelOdemeleri.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -215,6 +221,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Hasta\HastaTedavileri.resx">
       <DependentUpon>HastaTedavileri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mali\LaboratuvarOdemeleriYeni.resx">
+      <DependentUpon>LaboratuvarOdemeleriYeni.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mali\GenelPersonelOdemeleri.resx">
       <DependentUpon>GenelPersonelOdemeleri.cs</DependentUpon>
