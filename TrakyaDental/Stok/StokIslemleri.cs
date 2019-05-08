@@ -63,7 +63,7 @@ namespace TrakyaDental
         {            
             string[] sonuc = new string[20];
             int counter = 0;
-            string connStr = "Data Source=.;Initial Catalog=TrakyaDental;User ID=sa; Password=rootroot;";
+            string connStr = "Data Source=.;Initial Catalog=TrakyaDental;User ID=sa; Password=2362123;";
 
             using (SqlConnection con = new SqlConnection(connStr)) // Kullanılacak olan SqlConnection açılıyor.
             {
@@ -88,7 +88,12 @@ namespace TrakyaDental
         {
             try
             {
+<<<<<<< HEAD
                 string connStr = "Data Source=.;Initial Catalog=TrakyaDental;User ID=sa; Password=rootroot;";
+=======
+                string connStr = "Data Source=.;Initial Catalog=TrakyaDental;User ID=sa; Password=2362123;";
+
+>>>>>>> 754c5840829025572e95e0a26bfb846b08f891f5
                 urunDetay1.urunID = Convert.ToInt32(dataGridView1.SelectedCells[0].Value.ToString());
                 urunDetay1.marka = dataGridView1.SelectedCells[1].Value.ToString();
                 urunDetay1.urunGrubu = dataGridView1.SelectedCells[2].Value.ToString();
@@ -130,7 +135,7 @@ namespace TrakyaDental
             DataTable stokBilgileri = new DataTable();
 
 
-            string connStr = "Data Source=.;Initial Catalog=TrakyaDental;User ID=sa; Password=rootroot";
+            string connStr = "Data Source=.;Initial Catalog=TrakyaDental;User ID=sa; Password=2362123";
 
 
             using (SqlConnection con = new SqlConnection(connStr))
@@ -154,7 +159,7 @@ namespace TrakyaDental
             */
             try
             {
-                string connStr = "Data Source=.;Initial Catalog=TrakyaDental;User ID=sa; Password=rootroot;";
+                string connStr = "Data Source=.;Initial Catalog=TrakyaDental;User ID=sa; Password=2362123;";
 
                 stokHareket1.ID = dataGridView1.SelectedCells[0].Value.ToString();
                 ComboBox personel = new ComboBox();
@@ -203,11 +208,11 @@ namespace TrakyaDental
         {
             try
             {
-                //string connStr = "Data Source=.;Initial Catalog=TrakyaDental;User ID=sa; Password=rootroot;";
+                //string connStr = "Data Source=.;Initial Catalog=TrakyaDental;User ID=sa; Password=2362123;";
 
                 ComboBox urunG = new ComboBox();
                 ComboBox markalar = new ComboBox();
-                string connStr = "Data Source=.;Initial Catalog=TrakyaDental;User ID=sa; Password=rootroot;";
+                string connStr = "Data Source=.;Initial Catalog=TrakyaDental;User ID=sa; Password=2362123;";
 
                 using (SqlConnection con = new SqlConnection(connStr))
                 {
@@ -252,7 +257,7 @@ namespace TrakyaDental
 
         private void pbAra_Click(object sender, EventArgs e)
         {
-            string connStr = "Data Source=.;Initial Catalog=TrakyaDental;User ID=sa; Password=rootroot;";
+            string connStr = "Data Source=.;Initial Catalog=TrakyaDental;User ID=sa; Password=2362123;";
             int counter = 0;
             using (SqlConnection con = new SqlConnection(connStr))
             {
@@ -289,7 +294,7 @@ namespace TrakyaDental
         {
             try
             {
-                string connStr = "Data Source=.;Initial Catalog=TrakyaDental;User ID=sa; Password=rootroot;";
+                string connStr = "Data Source=.;Initial Catalog=TrakyaDental;User ID=sa; Password=2362123;";
 
                 SqlConnection con = new SqlConnection(connStr);
                 con.Open();

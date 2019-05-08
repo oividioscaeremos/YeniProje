@@ -13,7 +13,7 @@ namespace TrakyaDental.Stok
 {
     public partial class UrunEkle : UserControl
     {
-        string connStr = "Data Source=.;Initial Catalog=TrakyaDental;User ID=sa; Password=rootroot;";
+        string connStr = "Data Source=.;Initial Catalog=TrakyaDental;User ID=sa; Password=2362123;";
         string[] sonuc = new string[20];
         int mouseX = 0, mouseY = 0;
         bool mouseDown = false;
@@ -123,6 +123,11 @@ namespace TrakyaDental.Stok
         {
             mouseDown = true;
             lastLocation = e.Location;
+        }
+
+        private void dateSKT_ValueChanged(object sender, EventArgs e)
+        {
+
         }
 
         private void UrunEkle_Load(object sender, EventArgs e)

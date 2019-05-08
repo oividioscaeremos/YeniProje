@@ -9,6 +9,19 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
+/* 
+         * İlk başta SQL komutlarını kullanacağın için en üstte SQL kütüphanesini entegre et
+         * Sayaç  ve doktorlar dizisi tanımla.
+         * Daha sonra yeni bir SQL bağlantısı oluştur ve oluşturduğun bağlantıyı aç.
+         * SQL komutlarını kullanacağın için yeni bir SQL komutu oluştur.
+         * Doktor olan personelin ID'sini çek
+         * Sonrasında yapılan işlemler arasından doktor olanların işlemlerini çek
+         * Doktor olan personellerin ID'leri Çek
+         * Foreach kullanarak her bir satır için doktora ait olup olmadığını bul.
+         * Bir ya da birden fazla satırların sonuç olarak döneceği sorgularda SQL command'ın ExecuteReader özelliğini kullan.
+         * Daha sonra doktor olan tüm personelin verileri DataGridView'a at
+         
+         */
 namespace TrakyaDental
 {
     public partial class GenelPersonelOdemeleri : UserControl
@@ -25,7 +38,7 @@ namespace TrakyaDental
         {
             doktorOdemeleriYeni1.Hide();
             int counter = 0;
-            string connStr = "Data Source=.;Initial Catalog=TrakyaDental;User ID=sa; Password=rootroot";
+            string connStr = "Data Source=.;Initial Catalog=TrakyaDental;User ID=sa; Password=2362123";
             int[] doktorlar = new int[5];
 
             SqlConnection connect = new SqlConnection(connStr);
@@ -78,7 +91,7 @@ namespace TrakyaDental
             DataTable odemeBilgileri = new DataTable();
 
 
-            string connStr = "Data Source=.;Initial Catalog=TrakyaDental;User ID=sa; Password=rootroot";
+            string connStr = "Data Source=.;Initial Catalog=TrakyaDental;User ID=sa; Password=2362123";
 
 
             using (SqlConnection con = new SqlConnection(connStr))

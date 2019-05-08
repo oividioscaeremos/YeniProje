@@ -36,7 +36,7 @@ namespace TrakyaDental.Stok
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string connStr = "Data Source=.;Initial Catalog=TrakyaDental;User ID=sa; Password=rootroot;";
+            string connStr = "Data Source=.;Initial Catalog=TrakyaDental;User ID=sa; Password=2362123;";
             SqlConnection con = new SqlConnection(connStr);
             con.Open();
 
@@ -67,7 +67,7 @@ namespace TrakyaDental.Stok
         {
             try
             {
-                string connStr = "Data Source=.;Initial Catalog=TrakyaDental;User ID=sa; Password=rootroot;";
+                string connStr = "Data Source=.;Initial Catalog=TrakyaDental;User ID=sa; Password=2362123;";
                 SqlConnection con = new SqlConnection(connStr);
                 con.Open();
                 SqlCommand doktorlarCek = new SqlCommand("Select * from Personel where Unvan=@Unvan", con);

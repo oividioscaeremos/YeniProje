@@ -43,7 +43,7 @@ namespace TrakyaDental.Stok
                 // belirteceğiz.
                 try
                 {
-                    string connStr = "Data Source=.;Initial Catalog=TrakyaDental;User ID=sa; Password=rootroot;";
+                    string connStr = "Data Source=.;Initial Catalog=TrakyaDental;User ID=sa; Password=2362123;";
                     int mevcutMiktar = 0;
                     SqlConnection con = new SqlConnection(connStr);
                     con.Open();
