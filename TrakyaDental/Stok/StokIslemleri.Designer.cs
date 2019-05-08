@@ -38,7 +38,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.pbUrunEkle = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbUrunAra = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.pbStokHareketi = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -49,14 +49,14 @@
             this.pbAra = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.urunEkle1 = new TrakyaDental.Stok.UrunEkle();
-            this.stokHareket1 = new TrakyaDental.Stok.StokHareket();
-            this.urunDetay1 = new TrakyaDental.Stok.UrunDetay();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.urunEkle1 = new TrakyaDental.Stok.UrunEkle();
+            this.stokHareket1 = new TrakyaDental.Stok.StokHareket();
+            this.urunDetay1 = new TrakyaDental.Stok.UrunDetay();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbUrunEkle)).BeginInit();
@@ -131,7 +131,7 @@
             this.panel2.BackColor = System.Drawing.SystemColors.Control;
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.pbUrunEkle);
-            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.tbUrunAra);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.pbStokHareketi);
             this.panel2.Controls.Add(this.label3);
@@ -173,14 +173,13 @@
             this.pbUrunEkle.TabStop = false;
             this.pbUrunEkle.Click += new System.EventHandler(this.pbUrunEkle_Click);
             // 
-            // textBox1
+            // tbUrunAra
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox1.Location = new System.Drawing.Point(8, 18);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(152, 27);
-            this.textBox1.TabIndex = 9;
-            this.textBox1.Text = "5500";
+            this.tbUrunAra.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.tbUrunAra.Location = new System.Drawing.Point(8, 18);
+            this.tbUrunAra.Name = "tbUrunAra";
+            this.tbUrunAra.Size = new System.Drawing.Size(152, 27);
+            this.tbUrunAra.TabIndex = 9;
             // 
             // label4
             // 
@@ -233,6 +232,7 @@
             this.pbSil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbSil.TabIndex = 4;
             this.pbSil.TabStop = false;
+            this.pbSil.Click += new System.EventHandler(this.pbSil_Click);
             // 
             // label2
             // 
@@ -315,31 +315,6 @@
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
-            // urunEkle1
-            // 
-            this.urunEkle1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.urunEkle1.Location = new System.Drawing.Point(172, 233);
-            this.urunEkle1.Name = "urunEkle1";
-            this.urunEkle1.Size = new System.Drawing.Size(628, 198);
-            this.urunEkle1.TabIndex = 12;
-            this.urunEkle1.Load += new System.EventHandler(this.urunEkle1_Load);
-            // 
-            // stokHareket1
-            // 
-            this.stokHareket1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.stokHareket1.Location = new System.Drawing.Point(349, 256);
-            this.stokHareket1.Name = "stokHareket1";
-            this.stokHareket1.Size = new System.Drawing.Size(241, 202);
-            this.stokHareket1.TabIndex = 14;
-            // 
-            // urunDetay1
-            // 
-            this.urunDetay1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.urunDetay1.Location = new System.Drawing.Point(166, 133);
-            this.urunDetay1.Name = "urunDetay1";
-            this.urunDetay1.Size = new System.Drawing.Size(640, 226);
-            this.urunDetay1.TabIndex = 13;
-            // 
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToResizeColumns = false;
@@ -387,6 +362,32 @@
             // 
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
+
+            // urunEkle1
+            // 
+            this.urunEkle1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.urunEkle1.Location = new System.Drawing.Point(171, 180);
+            this.urunEkle1.Name = "urunEkle1";
+            this.urunEkle1.Size = new System.Drawing.Size(628, 198);
+            this.urunEkle1.TabIndex = 12;
+            this.urunEkle1.Load += new System.EventHandler(this.urunEkle1_Load);
+            // 
+            // stokHareket1
+            // 
+            this.stokHareket1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.stokHareket1.Location = new System.Drawing.Point(349, 256);
+            this.stokHareket1.Name = "stokHareket1";
+            this.stokHareket1.Size = new System.Drawing.Size(241, 232);
+            this.stokHareket1.TabIndex = 14;
+            // 
+            // urunDetay1
+            // 
+            this.urunDetay1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.urunDetay1.Location = new System.Drawing.Point(166, 133);
+            this.urunDetay1.Name = "urunDetay1";
+            this.urunDetay1.Size = new System.Drawing.Size(640, 226);
+            this.urunDetay1.TabIndex = 13;
             // 
             // StokIslemleri
             // 
@@ -442,7 +443,7 @@
         private System.Windows.Forms.PictureBox pbSil;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pbDetay;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbUrunAra;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pictureBox1;

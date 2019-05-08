@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UrunEkle));
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.closeIcon = new System.Windows.Forms.PictureBox();
             this.tbUrunAd = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -46,12 +45,13 @@
             this.dateSKT = new System.Windows.Forms.DateTimePicker();
             this.comboboxUrunGrup = new System.Windows.Forms.ComboBox();
             this.comboboxUrunMarka = new System.Windows.Forms.ComboBox();
-            this.pbUrunEkle = new System.Windows.Forms.PictureBox();
             this.tbBirimFiyat = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.pbUrunEkle = new System.Windows.Forms.PictureBox();
+            this.closeIcon = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.closeIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbUrunEkle)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.closeIcon)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -75,17 +75,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(628, 35);
             this.panel1.TabIndex = 18;
-            // 
-            // closeIcon
-            // 
-            this.closeIcon.Image = ((System.Drawing.Image)(resources.GetObject("closeIcon.Image")));
-            this.closeIcon.Location = new System.Drawing.Point(576, 3);
-            this.closeIcon.Name = "closeIcon";
-            this.closeIcon.Size = new System.Drawing.Size(59, 32);
-            this.closeIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.closeIcon.TabIndex = 0;
-            this.closeIcon.TabStop = false;
-            this.closeIcon.Click += new System.EventHandler(this.closeIcon_Click);
             // 
             // tbUrunAd
             // 
@@ -195,6 +184,7 @@
             this.dateSKT.Name = "dateSKT";
             this.dateSKT.Size = new System.Drawing.Size(191, 20);
             this.dateSKT.TabIndex = 37;
+            this.dateSKT.ValueChanged += new System.EventHandler(this.dateSKT_ValueChanged);
             // 
             // comboboxUrunGrup
             // 
@@ -211,17 +201,6 @@
             this.comboboxUrunMarka.Name = "comboboxUrunMarka";
             this.comboboxUrunMarka.Size = new System.Drawing.Size(191, 21);
             this.comboboxUrunMarka.TabIndex = 39;
-            // 
-            // pbUrunEkle
-            // 
-            this.pbUrunEkle.Image = ((System.Drawing.Image)(resources.GetObject("pbUrunEkle.Image")));
-            this.pbUrunEkle.Location = new System.Drawing.Point(548, 139);
-            this.pbUrunEkle.Name = "pbUrunEkle";
-            this.pbUrunEkle.Size = new System.Drawing.Size(74, 38);
-            this.pbUrunEkle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbUrunEkle.TabIndex = 40;
-            this.pbUrunEkle.TabStop = false;
-            this.pbUrunEkle.Click += new System.EventHandler(this.pbUrunEkle_Click);
             // 
             // tbBirimFiyat
             // 
@@ -240,6 +219,28 @@
             this.label2.Size = new System.Drawing.Size(91, 16);
             this.label2.TabIndex = 41;
             this.label2.Text = "BİRİM FİYATI:";
+            // 
+            // pbUrunEkle
+            // 
+            this.pbUrunEkle.Image = ((System.Drawing.Image)(resources.GetObject("pbUrunEkle.Image")));
+            this.pbUrunEkle.Location = new System.Drawing.Point(548, 139);
+            this.pbUrunEkle.Name = "pbUrunEkle";
+            this.pbUrunEkle.Size = new System.Drawing.Size(74, 38);
+            this.pbUrunEkle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbUrunEkle.TabIndex = 40;
+            this.pbUrunEkle.TabStop = false;
+            this.pbUrunEkle.Click += new System.EventHandler(this.pbUrunEkle_Click);
+            // 
+            // closeIcon
+            // 
+            this.closeIcon.Image = ((System.Drawing.Image)(resources.GetObject("closeIcon.Image")));
+            this.closeIcon.Location = new System.Drawing.Point(576, 3);
+            this.closeIcon.Name = "closeIcon";
+            this.closeIcon.Size = new System.Drawing.Size(59, 32);
+            this.closeIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.closeIcon.TabIndex = 0;
+            this.closeIcon.TabStop = false;
+            this.closeIcon.Click += new System.EventHandler(this.closeIcon_Click);
             // 
             // UrunEkle
             // 
@@ -271,8 +272,8 @@
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseUp);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.closeIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbUrunEkle)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.closeIcon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

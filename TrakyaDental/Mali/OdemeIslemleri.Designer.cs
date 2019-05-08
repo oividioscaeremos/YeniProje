@@ -28,61 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.labelPlus = new System.Windows.Forms.Label();
-            this.pbPlus = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbPlus)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // pictureBox1
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 40);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(893, 556);
-            this.dataGridView1.TabIndex = 7;
-            // 
-            // labelPlus
-            // 
-            this.labelPlus.AutoSize = true;
-            this.labelPlus.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelPlus.Location = new System.Drawing.Point(725, 9);
-            this.labelPlus.Name = "labelPlus";
-            this.labelPlus.Size = new System.Drawing.Size(146, 24);
-            this.labelPlus.TabIndex = 14;
-            this.labelPlus.Text = "YENİ OLUŞTUR";
-            // 
-            // pbPlus
-            // 
-            this.pbPlus.Image = global::TrakyaDental.Properties.Resources.plusNew;
-            this.pbPlus.Location = new System.Drawing.Point(696, 6);
-            this.pbPlus.Name = "pbPlus";
-            this.pbPlus.Size = new System.Drawing.Size(26, 31);
-            this.pbPlus.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbPlus.TabIndex = 13;
-            this.pbPlus.TabStop = false;
+            this.pictureBox1.Image = global::TrakyaDental.Properties.Resources.dental_png_2x;
+            this.pictureBox1.Location = new System.Drawing.Point(265, 93);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(357, 378);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // OdemeIslemleri
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.labelPlus);
-            this.Controls.Add(this.pbPlus);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "OdemeIslemleri";
             this.Size = new System.Drawing.Size(899, 599);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbPlus)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Label labelPlus;
-        private System.Windows.Forms.PictureBox pbPlus;
+
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

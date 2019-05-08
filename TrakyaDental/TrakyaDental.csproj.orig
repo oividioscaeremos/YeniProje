@@ -86,7 +86,7 @@
       <DependentUpon>PersonelEkle.cs</DependentUpon>
 =======
     <Compile Include="Mali\LaboratuvarOdemeleriYeni.cs">
-	    <SubTye>UserControl</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Mali\LaboratuvarOdemeleriYeni.Designer.cs">
       <DependentUpon>LaboratuvarOdemeleriYeni.cs</DependentUpon>
@@ -239,7 +239,8 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Mali\GenelPersonelOdemeleri.resx">
       <DependentUpon>GenelPersonelOdemeleri.cs</DependentUpon>
->>>>>>> 2667402d16f871022c164ea1ee29b351264463a4   </EmbeddedResource>
+>>>>>>> 2667402d16f871022c164ea1ee29b351264463a4
+    </EmbeddedResource>
     <EmbeddedResource Include="Mali\DoktorOdemeleri.resx">
       <DependentUpon>DoktorOdemeleri.cs</DependentUpon>
     </EmbeddedResource>

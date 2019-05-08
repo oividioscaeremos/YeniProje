@@ -63,6 +63,16 @@ namespace TrakyaDental.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap dental_png_2x {
+            get {
+                object obj = ResourceManager.GetObject("dental png@2x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap goBack_2x {
             get {
                 object obj = ResourceManager.GetObject("goBack@2x", resourceCulture);
